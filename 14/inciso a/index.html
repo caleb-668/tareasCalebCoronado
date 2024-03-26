@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Mi Lista de Tareas</h1>
+        <ul id="lista-tareas">
+            <li>Estudiar JavaScript</li>
+            <li>Hacer ejercicio</li>
+            <li>Leer un libro</li>
+        </ul>
+    </div>
+
+    <script>
+        // Modificar un elemento existente
+        const titulo = document.querySelector('h1');
+        titulo.textContent = 'Mis Pendientes';
+
+        // Crear un nuevo elemento
+        const nuevaTarea = document.createElement('li');
+        nuevaTarea.textContent = 'Ir al supermercado';
+
+        // Agregar el nuevo elemento a la lista
+        const listaTareas = document.getElementById('lista-tareas');
+        listaTareas.appendChild(nuevaTarea);
+
+        // Eliminar un elemento existente
+        const tareaEliminar = document.querySelector('li:nth-child(3)');
+        listaTareas.removeChild(tareaEliminar);
+    </script>
+</body>
+</html>

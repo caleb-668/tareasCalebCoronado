@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos en JavaScript</title>
+</head>
+<body>
+    <button id="boton">Haz clic aquí</button>
+    
+    <script>
+        const boton = document.getElementById('boton');
+
+        // Agregar un evento de clic al botón
+        boton.addEventListener('click', function() {
+            alert('¡Haz hecho clic en el botón!');
+        });
+    </script>
+</body>
+</html>
